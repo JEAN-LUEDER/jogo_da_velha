@@ -1,0 +1,19 @@
+/* Estilos CSS para a tabela */
+table {
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid black;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
