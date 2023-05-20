@@ -4,6 +4,16 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./fundo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 td {
@@ -11,9 +21,60 @@ td {
   height: 100px;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid black;
+  border: 15px solid rgb(104, 81, 5);
   font-size: 50px;
   font-weight: bold;
   cursor: pointer;
 }
 
+tr {
+  background-color: rgb(250, 250, 249);
+
+  
+}
+
+td:active {
+ transform: scale(0.9);
+
+}
+
+/* Estilos CSS para o botão */
+#reset-button {
+  position: relative;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(160, 152, 152, 0.76);
+  font-size: 50px;
+  color: rgb(5, 5, 5);
+  border-radius: 10px;
+  opacity: 0.;
+  cursor: pointer;
+
+
+}
+
+h1 {
+  color: rgb(7, 7, 7);
+  text-align: center;
+  font-size: 50px; /* Aumenta o tamanho da fonte para 40 pixels */
+  font-weight: bold; /* Define a fonte como negrito */
+  text-transform: uppercase; /* Converte o texto para maiúsculas */
+  letter-spacing: 1px; /* Adiciona um espaçamento entre as letras */
+}
+
+
+#fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
